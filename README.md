@@ -33,7 +33,7 @@ Source: [deep-bi/starrocks-kubernetes-operator](https://github.com/deep-bi/starr
 | `warehouse` | A StarRocks warehouse (needs the operator) |
 
 ```bash
-helm install starrocks-operator deep-bi/operator --version 1.11.8-deepbi.3 -n starrocks --create-namespace
+helm install starrocks-operator deep-bi/operator --version 1.11.8-deepbi.4 -n starrocks --create-namespace
 ```
 
 The StarRocks charts keep the upstream chart names. Their versions carry a `-deepbi.N` suffix, which Helm treats as a

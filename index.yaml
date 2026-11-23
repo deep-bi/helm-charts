@@ -136,6 +136,40 @@ entries:
   kube-starrocks:
   - apiVersion: v2
     appVersion: 4.1-latest
+    created: "2026-11-23T18:21:02.884731856+05:30"
+    dependencies:
+    - name: operator
+      repository: file://charts/operator
+      version: 1.11.8
+    - name: starrocks
+      repository: file://charts/starrocks
+      version: 1.11.8
+    description: kube-starrocks includes two subcharts, operator and starrocks
+    digest: 96f4d06ba4368d0f7a92abe23474c1f0fbba7de25f208208772fc91084a71eb7
+    home: https://github.com/StarRocks/starrocks-kubernetes-operator
+    icon: https://avatars.githubusercontent.com/u/88238841
+    keywords:
+    - operator
+    - starrocks
+    - database
+    - olap
+    kubeVersion: '>=1.23.0-0'
+    maintainers:
+    - email: caixiaohua@starrocks.com
+      name: Kevin Cai
+    - email: shensida@starrocks.com
+      name: SidaShen
+    - email: yandongxiao@starrocks.com
+      name: Dongxiao Yan
+    name: kube-starrocks
+    sources:
+    - https://github.com/StarRocks/starrocks
+    type: application
+    urls:
+    - https://charts.deep.bi/helm-releases/kube-starrocks-1.11.8-deepbi.4.tgz
+    version: 1.11.8-deepbi.4
+  - apiVersion: v2
+    appVersion: 4.1-latest
     created: "2026-11-23T18:03:06.200913491+05:30"
     dependencies:
     - name: operator
@@ -171,6 +205,33 @@ entries:
   operator:
   - apiVersion: v2
     appVersion: 1.11.8
+    created: "2026-11-23T18:21:02.885355315+05:30"
+    description: A Helm chart for StarRocks operator
+    digest: b5e84c5d5f69aa789bbd465d7aa0281661e8d60ee0ebd9a1fa493622f34a6021
+    home: https://github.com/StarRocks/starrocks-kubernetes-operator
+    icon: https://avatars.githubusercontent.com/u/88238841
+    keywords:
+    - operator
+    - starrocks
+    - database
+    - olap
+    kubeVersion: '>=1.23.0-0'
+    maintainers:
+    - email: caixiaohua@starrocks.com
+      name: Kevin Cai
+    - email: shensida@starrocks.com
+      name: SidaShen
+    - email: yandongxiao@starrocks.com
+      name: Dongxiao Yan
+    name: operator
+    sources:
+    - https://github.com/StarRocks/starrocks
+    type: application
+    urls:
+    - https://charts.deep.bi/helm-releases/operator-1.11.8-deepbi.4.tgz
+    version: 1.11.8-deepbi.4
+  - apiVersion: v2
+    appVersion: 1.11.8
     created: "2026-11-23T18:03:06.201468461+05:30"
     description: A Helm chart for StarRocks operator
     digest: be8b8af3551de1c82e5f9fe48806bf68c3d34990f8fc13429f3433717329c594
@@ -197,6 +258,33 @@ entries:
     - https://charts.deep.bi/helm-releases/operator-1.11.8-deepbi.3.tgz
     version: 1.11.8-deepbi.3
   starrocks:
+  - apiVersion: v2
+    appVersion: 4.1-latest
+    created: "2026-11-23T18:21:02.886544216+05:30"
+    description: A Helm chart for StarRocks cluster
+    digest: 0807cd6bc55d9a7fab545eb178ff1eb910622ae4e3df1169d0dbbf38db71d614
+    home: https://github.com/StarRocks/starrocks-kubernetes-operator
+    icon: https://avatars.githubusercontent.com/u/88238841
+    keywords:
+    - operator
+    - starrocks
+    - database
+    - olap
+    kubeVersion: '>=1.23.0-0'
+    maintainers:
+    - email: caixiaohua@starrocks.com
+      name: Kevin Cai
+    - email: shensida@starrocks.com
+      name: SidaShen
+    - email: yandongxiao@starrocks.com
+      name: Dongxiao Yan
+    name: starrocks
+    sources:
+    - https://github.com/StarRocks/starrocks
+    type: application
+    urls:
+    - https://charts.deep.bi/helm-releases/starrocks-1.11.8-deepbi.4.tgz
+    version: 1.11.8-deepbi.4
   - apiVersion: v2
     appVersion: 4.1-latest
     created: "2026-11-23T18:03:06.202632251+05:30"
@@ -227,6 +315,32 @@ entries:
   warehouse:
   - apiVersion: v2
     appVersion: 4.1-latest
+    created: "2026-11-23T18:21:02.886995508+05:30"
+    description: Warehouse is currently a feature of the StarRocks Enterprise Edition.
+    digest: 67ea16af9685d32a65fb572deb8cde8f63fcd2c6d29648d3728dc1b08f7b7d4e
+    home: https://github.com/StarRocks/starrocks-kubernetes-operator
+    icon: https://avatars.githubusercontent.com/u/88238841
+    keywords:
+    - operator
+    - starrocks
+    - database
+    - olap
+    - multi-warehouse
+    kubeVersion: '>=1.23.0-0'
+    maintainers:
+    - email: caixiaohua@starrocks.com
+      name: Kevin Cai
+    - email: yandongxiao@starrocks.com
+      name: Dongxiao Yan
+    name: warehouse
+    sources:
+    - https://github.com/StarRocks/starrocks
+    type: application
+    urls:
+    - https://charts.deep.bi/helm-releases/warehouse-1.11.8-deepbi.4.tgz
+    version: 1.11.8-deepbi.4
+  - apiVersion: v2
+    appVersion: 4.1-latest
     created: "2026-11-23T18:03:06.202983414+05:30"
     description: Warehouse is currently a feature of the StarRocks Enterprise Edition.
     digest: 81a8d248bdbf8578b37ad6ba11fb150672662f5ac54f9532ea27ea06deca58c8
@@ -251,4 +365,4 @@ entries:
     urls:
     - https://charts.deep.bi/helm-releases/warehouse-1.11.8-deepbi.3.tgz
     version: 1.11.8-deepbi.3
-generated: "2026-11-23T18:03:06.197470327+05:30"
+generated: "2026-11-23T18:21:02.880946932+05:30"
