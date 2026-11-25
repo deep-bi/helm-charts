@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% seo %}
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.prod.website-files.com/63221d14943f9b638f01eaa4/63272e128894dff3dcd93019_Deep%20BI%20Logo%20Dark%20Square%20Favicon%2032x32.png">
+    <link rel="apple-touch-icon" href="https://cdn.prod.website-files.com/63221d14943f9b638f01eaa4/63272e15f8acef7b9d709912_Deep%20BI%20Logo%20Dark%20Square%20Webclip%20256x256.png">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <style>
+      .site-header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:16px;margin-bottom:32px;border-bottom:1px solid #d0d7de}
+      .site-header img{height:40px;width:auto;display:block}
+      .site-header nav a{margin-left:16px;font-size:14px}
+      .site-footer{margin-top:48px;padding-top:16px;border-top:1px solid #d0d7de;font-size:14px;color:#57606a}
+    </style>
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      <header class="site-header">
+        <a href="https://www.deep.bi/" aria-label="Deep.BI home"><img src="{{ site.logo }}" alt="Deep.BI" width="148" height="40"></a>
+        <nav>
+          <a href="https://www.deep.bi/starrocks/kubernetes-operator">StarRocks operator</a>
+          <a href="https://www.deep.bi/apache-druid/tools#operator">Druid operator</a>
+          <a href="https://github.com/deep-bi/helm-charts">GitHub</a>
+        </nav>
+      </header>
+
+      {{ content }}
+
+      <footer class="site-footer">
+        Maintained by <a href="https://www.deep.bi/">Deep.BI</a>. This repository is licensed under the Apache License 2.0.
+      </footer>
+    </div>
+  </body>
+</html>

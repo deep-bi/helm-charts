@@ -1,0 +1,20 @@
+title: Deep.BI Helm Charts
+description: Helm charts for the Deep.BI Apache Druid and StarRocks Kubernetes operators.
+url: https://charts.deep.bi
+lang: en-US
+theme: jekyll-theme-primer
+logo: https://cdn.prod.website-files.com/63221d14943f9b638f01eaa4/6901197dc665cdc4c2453833_DeepBi%20Logo%20Vector%20Dark%20Blue.svg
+social:
+  name: Deep.BI
+  links:
+    - https://www.deep.bi
+    - https://github.com/deep-bi
+    - https://www.linkedin.com/company/deep-bi
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: https://cdn.prod.website-files.com/63221d14943f9b638f01eaa4/6aff77b7e1a4bc304565e58a_deepbi-og-v2.png
+exclude:
+  - LICENSE
+  - .DS_Store
