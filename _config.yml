@@ -1,5 +1,6 @@
 title: Deep.BI Helm Charts
 description: Helm charts for the Deep.BI Apache Druid and StarRocks Kubernetes operators.
+tagline: Druid and StarRocks operators
 url: https://charts.deep.bi
 lang: en-US
 theme: jekyll-theme-primer
