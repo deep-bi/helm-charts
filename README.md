@@ -1,6 +1,6 @@
 # Deep.BI Helm Charts
 
-Helm charts maintained by Deep.BI, served from `https://charts.deep.bi`.
+Helm charts for the [Deep.BI](https://www.deep.bi/) builds of the Apache Druid and StarRocks Kubernetes operators, served from `https://charts.deep.bi`.
 
 ```bash
 helm repo add deep-bi https://charts.deep.bi
@@ -11,7 +11,7 @@ helm repo update
 
 ### Druid Operator
 
-Source: [deep-bi/druid-operator](https://github.com/deep-bi/druid-operator)
+Source: [deep-bi/druid-operator](https://github.com/deep-bi/druid-operator). About the operator: [Tools for Apache Druid](https://www.deep.bi/apache-druid/tools#operator).
 
 | Chart | Description |
 |---|---|
@@ -23,7 +23,7 @@ helm install druid-operator deep-bi/druid-operator -n druid-operator --create-na
 
 ### StarRocks Operator
 
-Source: [deep-bi/starrocks-kubernetes-operator](https://github.com/deep-bi/starrocks-kubernetes-operator)
+Source: [deep-bi/starrocks-kubernetes-operator](https://github.com/deep-bi/starrocks-kubernetes-operator). About the operator: [StarRocks Kubernetes operator](https://www.deep.bi/starrocks/kubernetes-operator).
 
 | Chart | Description |
 |---|---|
